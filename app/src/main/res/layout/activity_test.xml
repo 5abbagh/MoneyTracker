@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="moi.moneytracker.TestActivity">
+
+    <EditText
+        android:id="@+id/lastDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="last date yyyy-MM-dd"
+        android:inputType="textPersonName"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/freq"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/unit"
+        android:layout_width="78dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="unit"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toRightOf="@+id/freq"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/freq"
+        android:layout_width="97dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="freq"
+        android:inputType="textPersonName"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Button"
+        app:layout_constraintTop_toBottomOf="@+id/lastDate"
+        tools:layout_editor_absoluteX="71dp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="173dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="65dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/submit"
+        tools:layout_editor_absoluteX="78dp" />
+</android.support.constraint.ConstraintLayout>
